@@ -9,7 +9,7 @@ int main(void)
 {
 	char p_puzzle[55] = "\"Programming is like building a multilingual puzzle";
 
-	puts(programming_puzzle);
+	puts(p_puzzle);
 
 	return (0);
 }
