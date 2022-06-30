@@ -9,7 +9,7 @@ int main(void)
 {
 	char p_gramma[70] = "with proper grammar, but the outcome is a piece of art,";
 
-	printf("%s", p_gramma);
+	printf("%s\n", p_gramma);
 
 	return (0);
 }
