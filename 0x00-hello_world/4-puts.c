@@ -7,9 +7,10 @@
  *with a new line.
  */
 
-int main()
+int main(void)
 {
-	char programming_puzzle[55] = "\"Programming is like building a multilingual puzzle";
+	char programming_puzzle[55] = "\"Programming is like building a\
+ multilingual puzzle";
 
 	puts(programming_puzzle);
 
