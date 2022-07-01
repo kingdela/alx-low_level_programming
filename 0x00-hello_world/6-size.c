@@ -9,11 +9,11 @@ int main(void)
 {
 	int int_type;
 
-	int char_type;
+	char char_type;
 
-	int long_int_type;
+	long int long_int_type;
 
-	int long_long_type;
+	long long long_long_type;
 
 	float float_type;
 
