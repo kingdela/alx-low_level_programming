@@ -10,7 +10,7 @@ int main(void)
 	int ch;
 	int ch2;
 
-	for (ch = '0'; ch <= 98; ch++)
+	for (ch = 0; ch <= 98; ch++)
 	{
 		for (ch2 = ch + 1; ch2 <= 99; ch2++)
 		{
