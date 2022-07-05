@@ -1,11 +1,10 @@
 #include <unistd.h>
+#include "main.h"
 
 /**
-  * _putchar - writes the character c to stdout
-  * @c: The character to print
+  * main - Entry pointt
   *
-  * Return: On success 1.
-  * On error, -1 is returned, and errno is set appropriately.
+  * Return: Always 0 (success)
   */
 int _putchar(char c)
 {
@@ -14,21 +13,14 @@ int _putchar(char c)
 
 int main(void)
 {
-	char n = 1;
+	char n[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	int i;
 
-	while (n <= 1)
+	for (i = 1; i <= 9; i++)
 	{
-		_putchar('_');
-		_putchar('p');
-		_putchar('u');
-		_putchar('t');
-		_putchar('c');
-		_putchar('h');
-		_putchar('a');
-		_putchar('r');
-		_putchar('\n');
-		n = n + 1;	
+		_putchar(n[]);
 	}
 
-	return (0);
+	_putchar('\n');
+
 }

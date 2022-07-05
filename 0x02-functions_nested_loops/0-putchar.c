@@ -3,25 +3,19 @@
 /**
   * main - Entry point
   *
-  * Return: Always 0 (Success)
+  * Return: On success 1.
   */
 int main(void)
 {
-	char n = 1;
+	char n[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	int i;
 
-	while (n <= 1)
+	for (i = 1; i <= 9; i++)
 	{
-		_putchar('_');
-		_putchar('p');
-		_putchar('u');
-		_putchar('t');
-		_putchar('c');
-		_putchar('h');
-		_putchar('a');
-		_putchar('r');
-		_putchar('\n');
-		n = n + 1;	
+		_putchar(n[]);
 	}
 
-	return (0);
+	_putchar('\n');
+
 }
+
