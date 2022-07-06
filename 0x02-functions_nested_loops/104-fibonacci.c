@@ -6,7 +6,7 @@
   * Return: Always 0 (Success)
   */
 
-float main(void)
+unsigned long main(void)
 {
 	int num;
 	int i;
