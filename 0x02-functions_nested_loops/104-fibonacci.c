@@ -19,12 +19,14 @@ int main(void)
 
 	num = 98;
 
-	for (i = 2; i <= num; i++)
+	for (i = 1; i <= num; i++)
 	{
 		printf("%lu, ", a);
 		c = a + b;
 		a = b;
 		b = c;
 	}
+	printf("\n");
 	return (0);
 }
+
