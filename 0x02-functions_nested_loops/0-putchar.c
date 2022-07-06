@@ -7,15 +7,15 @@
   */
 int main(void)
 {
-	char n[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	int i;
+	char n[8] = "_putchar";
+	int i = 0;
 
-	for (i = 1; i <= 9; i++)
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(n[]);
+		_putchar(n[i]);
 	}
-
 	_putchar('\n');
 
+	return (0);
 }
 
