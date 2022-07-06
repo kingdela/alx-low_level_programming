@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
-  * main - Entry point
+  * print_last_digit - Entry point
   *
-  * Return: On success 1.
+  * @r: An input character
+  *
+  * Return: Always 0 (Success)
   */
-int main(void)
+int print_last_digit(int r)
 {
-	int r;
+	int n;
 
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
+	if (r < 0)
+		n = -1 * (r % 10);
+	else
+		n = r % 10;
 
-	return (0);
+	_putchar((n % 10) + '0');
+	return (n % 10);
 }
-
