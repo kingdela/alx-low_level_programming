@@ -3,6 +3,8 @@
 /**
   * _islower - Entry point
   *
+  * @c: An input character
+  *
   * Return: Always 0 (Success)
   */
 int _islower(int c)
