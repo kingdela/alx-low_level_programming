@@ -1,31 +1,31 @@
 #include "main.h"
 
-int square(int, int);
-
+int check_prime(int n, int resp);
 /**
-  * _sqrt_recursion - find the square root of natural number
-  * @n: integer whose square root is to be find
+  * is_prime_number - check if n is prime number
+  * @n: integer to be checked
   *
-  * Return: the square root of integer n
+  * Return: i if is prime 0 otherwise
   */
-int _sqrt_recursion(int n)
+
+int is_prime_number(int n)
 {
-	return (square(n, 1));
+	return (check_prime(n, 2));
 }
 
 /**
-  * square - find square root
-  * @n: int to find square root
-  * @val: square root
+  * check_prime - check all number < n if they can divide it
+  * @n: int
+  * @resp: int
   * Return: int
   */
 
-int square(int n, int val)
+int check_prime(int n, int resp)
 {
-	if (val * val == n)
-		return (val);
-	else if (val * val < n)
-		return  (square(n, val + 1));
+	if (resp >= n && n > 1)
+		return (1);
+	else if (n % resp == 0 || n <= 1)
+		return (0);
 	else
-		return (-1);
+		return (check_prime(n, resp + 1));
 }
