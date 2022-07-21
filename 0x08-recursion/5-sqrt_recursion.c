@@ -1,5 +1,7 @@
 #include "main.h"
 
+int square(int, int);
+
 /**
   * _sqrt_recursion - calculates the square root of a number using recursion
   * @n: the number to deal with.
@@ -8,24 +10,22 @@
   */
 int _sqrt_recursion(int n)
 {
-	return (get_sqrt(n, 1));
+	return (square(n, 1));
 }
+
 /**
-  * get_sqrt - tries to get the square root of n by continously
-  * comparing the square of 'possible_root' to n
-  * @n: the number
-  * @possible_root: a possible root of n
-  *
-  * Return: square root of n, -1 otherwise
+  * square - find square root
+  * @n: int to find square root
+  * @val: square root
+  * Return: int
   */
-int get_sqrt(int n, int possible_root)
+int square(int n, int val)
 {
-	int square = possible_root * possible_root;
-
-	if (square == n)
-		return (possible_root);
-	if (square < n)
-		return (get_sqrt(n, ++possible_root));
-
-	return (-1);
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return  (square(n, val + 1));
+	else
+		return (-1);
 }
+
