@@ -34,12 +34,12 @@ int _strlen(char *s)
 }
 
 /**
-  * check_palindrome - check if string is a palindrome
-  * @s: the string to be checked
-  * @i: index
-  * @len: the length of the s
+  * check_palindrome - checks if a substring is a palindrome
+  * @s: the string
+  * @start: the starting index of substring
+  * @end: the stopping index of substring
   *
-  * Return: 1 if palindrome,  else 0.
+  * Return: 1 if substring is a palindrome, otherwise 0
   */
 int check_palindrome(char *s, int start, int end)
 {
