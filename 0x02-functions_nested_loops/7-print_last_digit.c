@@ -6,18 +6,16 @@
  * Return: integer value
  */
 
-int print_last_digit(int n)
-
+int print_last_digit(int var)
 {
-	int l;
+	int r;
 
-	last = n % 10;
+	if (var < 0)
+		r = -1 * (var % 10);
+	else
+		r = var % 10;
 
-	if (l < 0)
+	_putchar ((r) + '0');
 
-	l = l * -1;
-
-	_putchar(l + '0');
-
-	return (l);
+	return (r);
 }
